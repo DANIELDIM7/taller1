@@ -1,0 +1,102 @@
+.contenedor-contenedor-foto-perfil {
+  width: 800px;
+  border-top: 5px black solid;
+  border-right: 5px black solid;
+  border-left: 5px black solid;
+  display: flex;
+  place-content: center;
+  background-color: rgb(221, 223, 223);
+}
+.contenedor-principal {
+  display: flex;
+  place-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px rgb(177, 171, 171) solid;
+  margin-top: 10px;
+}
+
+.contenedor-foto-perfil {
+  width: 250px;
+  height: 250px;
+  border: 2px solid rgb(196, 192, 192);
+  border-radius: 500px;
+  padding: 5px;
+  display: flex;
+  place-content: center;
+  background-color: #fff;
+  position: relative;
+  top: 90px;
+}
+
+img {
+  border-radius: 500px;
+  border: 1px solid gray;
+}
+
+/* descripción */
+
+.contenedor-descripcion {
+  width: 800px;
+  border: 2px rgb(196, 192, 192) solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 95px;
+}
+
+.contenedor-iconos {
+  width: 800px;
+  display: flex;
+}
+
+.contenedor-iconos ul {
+  width: 800px;
+  display: flex;
+  place-content: center;
+}
+
+.contenedor-iconos ul li {
+  margin-top: 20px;
+  list-style: none;
+  margin-left: 70px;
+}
+
+.icon {
+  font-size: 40px;
+  color: gray;
+}
+
+.contenedor-descripcion p {
+  font-size: 1.5rem;
+  color: gray;
+}
+
+/* iconos */
+.icon-desktop:hover {
+  color: green;
+  border-top: 1px solid green;
+}
+
+.icon-mail:hover {
+  color: red;
+  border-top: 1px solid red;
+}
+.icon-calendar:hover {
+  color: yellow;
+  border-top: 1px solid yellow;
+}
+.icon-location:hover {
+  color: blue;
+  border-top: 1px solid blue;
+}
+.icon-phone:hover {
+  color: orange;
+  border-top: 1px solid orange;
+}
+.icon-lock:hover {
+  color: orangered;
+  border-top: 1px solid orangered;
+}
+
+
