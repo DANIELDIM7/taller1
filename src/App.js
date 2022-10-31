@@ -1,18 +1,35 @@
+import "./App.css";
+import Perfil from "./components/perfil.js";
+import React, { Component } from "react";
 
-import './App.css';
-import Perfil from './componentes/perfil';
+export class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      nombre:''
+    };
+  }
 
-function App() {
-  return (
-    <div className="App">
-      
+  handleClick = (formvalues) => {
+    this.setState({
+      nombre:formvalues
+
+      })
+    
+  }
+
+  render() {
+    
+    return (
+      <div>
         <Perfil
-        descripcionCorreo ='My email address is'
-        correo = 'ingdanielcuellar4737@gmail.com'
+          onChange={this.handleClick}
+          textoParrafo={Object.keys(this.state)}
+          textoH1={this.state.nombre}
         />
-      
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
 export default App;

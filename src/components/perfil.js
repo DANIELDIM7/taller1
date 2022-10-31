@@ -10,7 +10,39 @@ import {
 import "../styles/perfil.css";
 
 class Perfil extends React.Component {
+  
+  constructor(props){
+    
+    super(props)
+    this.state = {
+      nombre: 'Daniel Cuellar',
+      correo: 'ingdanielcuellar4737@gmail.com',
+      cumpleaños: '25 de Julio',
+      direccion: 'Calle 49 AA #98 CC 113',
+      telefono: 3146847483,
+      contraseña: '123456da',
+      a:''
+
+    }
+    
+  }
+
+  
+  
+  handleClick1 = (e) =>{
+  this.props.onChange(this.state.nombre)
+  this.setState({
+    a: 'My nombre es'
+
+    })
+  
+  }
+    
+  
+
+
   render() {
+    
     return (
       <div className="contenedor-principal">
         <div className="contenedor-contenedor-foto-perfil">
@@ -24,19 +56,20 @@ class Perfil extends React.Component {
         </div>
         
         <div className="contenedor-descripcion">
-          <p>{this.props.descripcionCorreo}</p>
-          <h1>{this.props.correo}</h1>
+          <p>{this.state.a}</p>
+          <h1>{this.props.textoH1}</h1>
           <div className="contenedor-iconos">
             <ul>
               <li>
                 {" "}
-                <a href="#">
+                <a href="#" onClick={this.handleClick1}>
                   <CiDesktop className="icon icon-desktop" />
+                  
                 </a>{" "}
               </li>
               <li>
                 {" "}
-                <a href="#">
+                <a href="#" >
                   <CiMail className="icon icon-mail" />
                 </a>{" "}
               </li>
