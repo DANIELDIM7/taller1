@@ -6,27 +6,22 @@ export class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      nombre:''
+      salida: "",
     };
   }
 
   handleClick = (formvalues) => {
     this.setState({
-      nombre:formvalues
-
-      })
-    
-  }
+      salida: formvalues,
+    });
+  };
 
   render() {
-    
     return (
       <div>
-        <Perfil
-          onChange={this.handleClick}
-          textoParrafo={Object.keys(this.state)}
-          textoH1={this.state.nombre}
-        />
+        <Perfil 
+        onChange={this.handleClick} 
+        textoH1={this.state.salida} />
       </div>
     );
   }
