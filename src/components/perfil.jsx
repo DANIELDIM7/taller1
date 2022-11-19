@@ -50,7 +50,7 @@ const Perfil = ({ picture, name, email, dob, location, phone, login }) => {
       <div className="contenedor-principal">
         <div className="contenedor-contenedor-foto-perfil">
           <div className="contenedor-foto-perfil">
-            <img className="foto-perfil" src={picture.large} />
+            <img className="foto-perfil" src={picture.large} alt='Logo'/>
           </div>
         </div>{" "}
         <div className="contenedor-descripcion">
@@ -62,39 +62,45 @@ const Perfil = ({ picture, name, email, dob, location, phone, login }) => {
               {" "}
               <li>
                 {" "}
-                <a href="#" onClick={handleClick1}>
-                  <CiUser className="icon icon-desktop" />{" "}
-                </a>{" "}
+                <CiUser
+                  onClick={handleClick1}
+                  className="icon icon-desktop"
+                />{" "}
               </li>{" "}
               <li>
                 {" "}
-                <a href="#" onClick={handleClick2}>
-                  <CiMail className="icon icon-mail" />{" "}
-                </a>{" "}
+                <CiMail
+                  onClick={handleClick2}
+                  className="icon icon-mail"
+                />{" "}
               </li>{" "}
               <li>
                 {" "}
-                <a href="#" onClick={handleClick3}>
-                  <CiCalendarDate className="icon icon-calendar" />{" "}
-                </a>{" "}
+                <CiCalendarDate
+                  onClick={handleClick3}
+                  className="icon icon-calendar"
+                />{" "}
               </li>{" "}
               <li>
                 {" "}
-                <a href="#" onClick={handleClick4}>
-                  <CiLocationOn className="icon icon-location" />{" "}
-                </a>{" "}
+                <CiLocationOn
+                  onClick={handleClick4}
+                  className="icon icon-location"
+                />{" "}
               </li>{" "}
               <li>
                 {" "}
-                <a href="#" onClick={handleClick5}>
-                  <CiPhone className="icon icon-phone" />{" "}
-                </a>{" "}
+                <CiPhone
+                  onClick={handleClick5}
+                  className="icon icon-phone"
+                />{" "}
               </li>{" "}
               <li>
                 {" "}
-                <a href="#" onClick={handleClick6}>
-                  <CiLock className="icon icon-lock" />{" "}
-                </a>{" "}
+                <CiLock
+                  onClick={handleClick6}
+                  className="icon icon-lock"
+                />{" "}
               </li>{" "}
             </ul>{" "}
           </div>{" "}
